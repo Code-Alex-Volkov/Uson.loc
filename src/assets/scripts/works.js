@@ -12,5 +12,3 @@ FontAwesomeFree();
 slick();
 /*MagnificPopup();*/
 jqueryScript();
-
-

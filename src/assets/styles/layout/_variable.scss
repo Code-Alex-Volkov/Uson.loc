@@ -1,9 +1,57 @@
 //mixin fonts 
 
-@mixin Montserrat_font(){
-	font-family: 'Montserrat', sans-serif;
+@mixin GothamProLight(){ 
+	font-family: 'GothamProLight', sans-serif;
 }
 
-@mixin OpenSans_font(){ 
-	font-family: 'Open Sans', sans-serif;
+@mixin GothamProRegular(){
+	font-family: 'GothamProRegular', sans-serif;
+}
+
+@mixin GothamProMedium(){ 
+	font-family: 'GothamProMedium', sans-serif;
+}
+
+@mixin GothamProBold(){ 
+	font-family: 'GothamProBold', sans-serif;
+}
+
+
+@font-face {
+	font-family: 'GothamProRegular';
+	src: url('../fonts/GothamPro.eot');
+	src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/GothamPro.woff') format('woff'),
+	url('../fonts/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamProMedium';
+	src: url('../fonts/GothamPro-Medium.eot');
+	src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/GothamPro-Medium.woff') format('woff'),
+	url('../fonts/GothamPro-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GothamProBold';
+	src: url('../fonts/GothamPro-Bold.eot');
+	src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/GothamPro-Bold.woff') format('woff'),
+	url('../fonts/GothamPro-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamProLight';
+	src: url('../fonts/GothamPro-Light.eot');
+	src: url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/GothamPro-Light.woff') format('woff'),
+	url('../fonts/GothamPro-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
