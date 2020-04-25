@@ -15,22 +15,31 @@ $(document).ready(function(){
 
 	/* slider choose */
 	if ($('.advantage').length) {
-		if($('body').innerWidth() < 768){
-			$('.advantage').slick({
-				  infinite: true,
-				  slidesToShow: 2,
-				  slidesToScroll: 1,
-				  responsive: [
-				    {
-				      breakpoint: 576,
-				      settings: {
-				        	slidesToShow: 1,
-				  			slidesToScroll: 1
-				      }
-				    }
-				  ]
-			});
-		}			
+		$('.advantage').slick({
+			  infinite: true,
+			  slidesToShow: 3,
+			  slidesToScroll: 1,
+			  appendArrows: $('.slider_navigation'),
+			  prevArrow: "<div class=\"left\"><i class=\"fas fa-angle-left\"></i></div>",
+			  nextArrow: "<div class=\"right\"><i class=\"fas fa-angle-right\"></i></div>",
+			  responsive: [
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        	slidesToShow: 2,
+			  			slidesToScroll: 1
+			      }
+			    },
+			    {
+			      breakpoint: 576,
+			      settings: {
+			        	slidesToShow: 1,
+			  			slidesToScroll: 1
+			      }
+			    }
+			  ]
+		});
+			
 	}
 
 });

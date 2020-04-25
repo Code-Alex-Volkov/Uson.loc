@@ -200,6 +200,11 @@
 								  	font-size: 10px;
 								}
 							}
+							span.wpcf7-not-valid-tip {
+								color: #fff;
+								@include GothamProLight();
+								font-size: 12px;
+							}
 						}
 					}
 					.submit_box {
@@ -222,6 +227,10 @@
 								transition: all 200ms ease-in-out;
 							}
 						}
+					}
+					div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-ok {
+						color: #fff;
+						@include GothamProLight();
 					}
 				}
 				.soc_box {
@@ -246,44 +255,29 @@
 							line-height: 25px;
 							text-align: center;
 							display: inline-block;
+							transition: all 200ms ease-in-out;
+							&:hover {
+								background: transparent !important;
+								transition: all 200ms ease-in-out;
+							}
 							&:not(:last-child) {
 								margin-right: 10px;
 							}
 							&.facebook {
 								background: #23599c;
 								border: 1px solid #23599c;
-								transition: all 200ms ease-in-out;
-								&:hover {
-									background: transparent;
-									transition: all 200ms ease-in-out;
-								}
 							}
 							&.twitter {
 								background: #00adf0;
 								border: 1px solid #00adf0;
-								transition: all 200ms ease-in-out;
-								&:hover {
-									background: transparent;
-									transition: all 200ms ease-in-out;
-								}
 							}
 							&.vk {
 								background: #376d94;
 								border: 1px solid #376d94;
-								transition: all 200ms ease-in-out;
-								&:hover {
-									background: transparent;
-									transition: all 200ms ease-in-out;
-								}
 							}
 							&.youtube {
 								background: #ff0000;
 								border: 1px solid #ff0000;
-								transition: all 200ms ease-in-out;
-								&:hover {
-									background: transparent;
-									transition: all 200ms ease-in-out;
-								}
 							}
 						}
 						.instagram {
@@ -322,8 +316,35 @@
 		@include GothamProRegular();
 		padding-bottom: 80px;
 	}
+	.advantage_slider {
+		.slider_navigation {
+			position: relative;
+			top: 70px;
+			.left {
+				position: absolute;
+				left: -20px;
+				cursor: pointer;
+				.fa-angle-left {
+					font-size: 22px;
+					color: #b18248;
+				}
+			}
+			.right {
+				position: absolute;
+				right: -20px;
+				cursor: pointer;
+				.fa-angle-right {
+					font-size: 22px;
+					color: #b18248;
+				}
+			}
+		}
+	}
 	.advantage {
 		display: flex;
+		.slick-slide {
+			padding: 0 20px;
+		}
 		.list {
 			width: 33.33333%;
 			&:not(:last-child) {
@@ -684,6 +705,13 @@
 			}
 		}
 	}
+
+	.about {
+		.advantage_slider {
+		
+		}
+	}
+
 	.about .advantage .list .title_block .title_advantage {
 		font-size: 16px;
 	}
