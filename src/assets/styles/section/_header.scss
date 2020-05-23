@@ -1,5 +1,4 @@
 .header {
-	background: url(../images/bg_header.jpg) no-repeat top center;
 	background-size: cover;
 	.bg_header {
 		background: rgba(0,0,0,0.5);
@@ -96,7 +95,7 @@
 		.center_box {
 			display: flex;
 			justify-content: space-between;
-			padding-bottom: 100px;
+			padding-bottom: 80px;
 			.left_section {
 				width: 68%;
 				.title {
@@ -140,6 +139,9 @@
 					padding: 30px 28px;
 					text-align: center;
 					margin-bottom: 25px;
+					form {
+						position: relative;
+					}
 					.title_form {
 						color: #fff;
 						font-size: 16px;
@@ -204,6 +206,11 @@
 								color: #fff;
 								@include GothamProLight();
 								font-size: 12px;
+								width: 100%;
+								position: absolute;
+								left: 50%;
+								top: 20px;
+								transform: translateX(-50%) translateY(0px);
 							}
 						}
 					}
@@ -228,9 +235,19 @@
 							}
 						}
 					}
-					div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-ok {
+					div.wpcf7-validation-errors {
+						display: none !important;
+					}
+					div.wpcf7-mail-sent-ng, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-ok {
 						color: #fff;
 						@include GothamProLight();
+						font-size: 12px;
+						width: 100%;
+						position: absolute;
+						left: 50%;
+						bottom: -25px;
+						margin: 0;
+						transform: translateX(-50%) translateY(0px);
 					}
 				}
 				.soc_box {
@@ -741,6 +758,10 @@
 			text-align: center;
 			.title {
 				text-align: left;
+				font-size: 24px;
+			}
+			.btn_click {
+				padding: 15px 40px;
 			}
 		}
 		.right_section {
@@ -751,14 +772,24 @@
 	    font-size: 14px;
 	    padding: 15px 60px;
 	}
+	.header .bg_header .center_box .left_section .sub_title {
+	    text-align: left;
+	}
 	.about .advantage .list .advantage_text {
-		text-align: center;
+		text-align: left;
 	}
 	.about .advantage .list .title_block {
 		justify-content: center;
 		flex-direction: column;
+		height: 100%;
 		.title_advantage {
 			margin-top: 15px;
 		}
+	}
+	.about .advantage .slick-slide {
+		padding: 0 10px;
+	}
+	.about .advantage .list .title_block .title_advantage {
+		padding-left: 0;
 	}
 }
